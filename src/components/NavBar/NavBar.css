@@ -1,0 +1,21 @@
+.NavBar {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	justify-content: flex-start;
+	background-color: #4b594a;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+.nav-bar-button { 
+	padding: 4%;
+	font-family: 'Montserrat', sans-serif;
+
+}
+.carrito{
+	padding: 5%;
+	margin-left: auto;
+}
+		
