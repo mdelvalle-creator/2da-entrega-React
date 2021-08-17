@@ -1,9 +1,9 @@
 import React from 'react'
 
-function ItemListContainer() {
+const ItemListContainer = ({title}) => {
     return (
         <div>
-            
+            {title || ''}
         </div>
     )
 }
