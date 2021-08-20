@@ -1,17 +1,18 @@
 .card {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   text-align: center;
-  background-color: #99755d;
-  border: 2px solid rgb(39, 34, 34);
+  background-color: #514855;
+  border: 2px solid rgb(191, 173, 206);
   border-radius: 5px;
+  margin-top: 5px;
   
   }
 
   .suma {
-    background-color: #99755d;
+    background-color: #e0cae2;
     border-radius: 5px;
   }
 .resta {
-  background-color: #99755d;
+  background-color: #e6c0eb;
   border-radius: 5px;
 }
