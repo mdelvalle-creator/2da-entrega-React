@@ -1,6 +1,6 @@
 import { resolve } from 'q';
 import React from 'react'
-import ItemDetail from '../ItemDetail/ItemDetail';
+import ItemPreview from '../ItemPreview/ItemPreview';
 
 const resultado = [
     {id:1, title:"Sweater Violeta", pictureUrl:"https://i.pinimg.com/564x/54/60/13/546013d6e9856c38baf8b8e071b18b4d.jpg", price:"750"}, 
@@ -23,7 +23,7 @@ const ItemList = () => {
     });
     return (
         <div className="item-list-container">
-            {items.length > 0 && items.map(item => <ItemDetail key={item.id} id={item.id} title={item.title} pictureUrl={item.pictureUrl} price={item.price} />)}
+            {items.length > 0 && items.map(item => <ItemPreview key={item.id} id={item.id} title={item.title} pictureUrl={item.pictureUrl} price={item.price} />)}
         </div>
     )
 }

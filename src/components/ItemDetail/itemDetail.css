@@ -1,3 +1,17 @@
-.nombreProducto{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+.item-detail-container {
+    display: flex;
+    align-items: center;
+}
+
+.detail-text-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.detail-text-container h2 {
+
+}
+
+.detail-text-container h3 {
+        
 }
