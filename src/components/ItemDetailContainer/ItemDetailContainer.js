@@ -1,21 +1,23 @@
 import React from 'react'
+import { useParams } from 'react-router';
 import './ItemDetailContainer.css'
 import ItemDetail from '../ItemDetail/ItemDetail';
-const resultado = {id:1, title:"Sweater Violeta", pictureUrl:"https://i.pinimg.com/564x/54/60/13/546013d6e9856c38baf8b8e071b18b4d.jpg", price:"750"};
+import mockResultadosApi from '../../mockResultadosApi';
 
-const pegadaAlServer = new Promise((resolve, reject) => {
-    setTimeout(()=>{resolve(resultado)}, 2000);
+const pegadaAlServer = (itemId) => new Promise((resolve, reject) => {
+    setTimeout(()=>{resolve(itemId ? mockResultadosApi.find(item=>item.id==itemId) : null)}, 2000);
 })
 
 const ItemDetailContainer = () => {
     const [item, setItem] = React.useState(null);
+    const { itemId } = useParams();
+
     React.useEffect(()=>{
-        if(!item){
-            pegadaAlServer.then(result =>{
-                console.log(result);   
-                setItem(result)})
-        }
-    });
+        pegadaAlServer(itemId).then(result =>{
+            console.log(item);
+            setItem(result)})
+    }, [itemId]);
+
     return (
         <div className="item-detail-container">
             {item && (

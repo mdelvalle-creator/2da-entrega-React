@@ -1,3 +1,13 @@
 .nombreProducto{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    color: black;
+}
+.nombreProducto:hover {
+    color: rgb(85, 107, 85);
+    cursor: pointer;
+}
+
+.preview-image{
+    max-height: 450px;
 }

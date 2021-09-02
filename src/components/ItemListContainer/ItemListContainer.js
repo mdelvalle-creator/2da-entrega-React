@@ -1,15 +1,25 @@
 import React from 'react'
-import ItemCount from '../ItemCount/ItemCount'
+import { useParams } from 'react-router';
 import ItemList from '../ItemList/ItemList'
 import './itemListContainer.css'
+import mockResultadosApi from '../../mockResultadosApi';
 
-const ItemListContainer = ({title}) => {
+const pegadaAlServer = (categoryId) => new Promise((resolve, reject) => {
+    setTimeout(()=>{resolve(categoryId ? mockResultadosApi.filter((item)=>item.categoryId==categoryId) : mockResultadosApi)}, 2000);
+})
+
+const ItemListContainer = () => {
+    const [items, setItems] = React.useState([]);
+    const { categoryId } = useParams();
+
+    React.useEffect(()=>{
+        pegadaAlServer(categoryId).then(result =>{
+            setItems(result)})
+    }, [categoryId]);
+    
     return (
         <div className="item-list-container">
-            {title || ''}
-            <ItemCount stock={5} initial={1} onAdd={()=>{}} />
-            <ItemList />
-
+            <ItemList items={items} />
         </div>
     )
 }

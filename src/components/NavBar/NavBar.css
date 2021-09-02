@@ -2,7 +2,7 @@
 	display: flex;
 	align-items: center;
 	width: 100%;
-	justify-content: flex-start;
+	justify-content: space-between;
 	background-color: #4b594a;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 	position: fixed;
@@ -12,7 +12,19 @@
 .nav-bar-button { 
 	padding: 4%;
 	font-family: 'Montserrat', sans-serif;
-
+	border-radius: 6px;
+	color: white;
+	text-decoration: none;
+	margin: 5px;
+}
+.nav-bar-button:hover {
+	background-color: #4f644e;
+	color: rgb(237 153 120);
+	cursor: pointer;
+}
+.nav-bar-button.-active {
+	background-color: #374e36;
+	color: rgb(237 153 120);
 }
 
 		
