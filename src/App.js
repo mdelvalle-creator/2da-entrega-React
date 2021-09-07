@@ -4,7 +4,7 @@ import './components/NavBar/NavBar.css';
 import NavBar from './components/NavBar/NavBar';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
-import ItemCount from './components/ItemCount/ItemCount';
+import CartPage from './components/CartPage/cartPage';
 import { BrowserRouter, Switch, Route} from 'react-router-dom';
 
 function App() {
@@ -24,6 +24,9 @@ function App() {
           </Route>
           <Route exact path='/items/:itemId'>
             <ItemDetailContainer />
+          </Route>
+          <Route>
+            <CartPage />
           </Route>
         </Switch>
       </BrowserRouter>

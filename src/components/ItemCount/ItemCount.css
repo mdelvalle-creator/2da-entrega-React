@@ -1,18 +1,26 @@
 .card {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   text-align: center;
-  background-color: #514855;
-  border: 2px solid rgb(191, 173, 206);
-  border-radius: 5px;
+  background-color: #54405d;
+  border-radius: 14px;
   margin-top: 5px;
-  
-  }
+  color: white;
+  font-size: 10px;
+}
 
-  .suma {
-    background-color: #e0cae2;
-    border-radius: 5px;
-  }
-.resta {
-  background-color: #e6c0eb;
+.actionContainer{
+  background-color: #e0cae2;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 60px;
+  border-radius: 0px 0px 14px 14px;
+}
+
+.quantityButton {
   border-radius: 5px;
+  border: none;
+  padding: 13px 11px 10px 10px;
+  color: white;
+  background-color: #7f648b;
 }

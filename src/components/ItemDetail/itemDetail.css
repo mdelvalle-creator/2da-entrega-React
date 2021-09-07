@@ -1,11 +1,24 @@
-.item-detail-container {
+.itemDetail-container {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .detail-text-container {
     display: flex;
     flex-direction: column;
+    margin-left: 32px;
+    min-width: 170px;
+}
+
+.actionButton {
+    background-color: #768a75;
+    border-radius: 20px;
+    padding: 7px;
+    color: white;
+    font-size: 18px;
+    font-family: 'Montserrat';
+    margin-top: 24px;
+    text-decoration: none;
 }
 
 .detail-text-container h2 {
