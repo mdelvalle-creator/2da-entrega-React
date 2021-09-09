@@ -2,14 +2,17 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import "./ItemDetail.css";
 import ItemCount from '../ItemCount/ItemCount';
+import { CartContext } from '../../context/CartContext/CartContext';
 
 const ItemDetail = ({id, title, pictureUrl, price, max}) => {
 
     const [buying, setBuying] = React.useState(false);
     const [quantity, setQuantity] = React.useState(0);
+    const {addItem} = React.useContext(CartContext);
 
     const onAdd = (contador) => {
         setQuantity(contador);
+        addItem({id,title,pictureUrl,price,max, quantity: contador})
     };
 
     return (
