@@ -27,7 +27,7 @@ function App() {
             <Route exact path='/items/:itemId'>
               <ItemDetailContainer />
             </Route>
-            <Route>
+            <Route exact path='/cart'>
               <CartPage />
             </Route>
           </Switch>
