@@ -5,6 +5,8 @@ import NavBar from './components/NavBar/NavBar';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
 import CartPage from './components/CartPage/cartPage';
+import CheckoutPage from './components/CheckoutPage/checkoutPage';
+import OrderPage from './components/OrderPage/orderPage';
 import { CartProvider } from './context/CartContext/CartContext';
 import { BrowserRouter, Switch, Route} from 'react-router-dom';
 
@@ -29,6 +31,15 @@ function App() {
             </Route>
             <Route exact path='/cart'>
               <CartPage />
+            </Route>
+            <Route exact path='/checkout'>
+              <CheckoutPage />
+            </Route>
+            <Route exact path='/orders/:orderId'>
+              <OrderPage />
+            </Route>
+            <Route exact path='/orders'>
+              <OrderPage />
             </Route>
           </Switch>
           </CartProvider>

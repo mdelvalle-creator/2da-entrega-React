@@ -25,7 +25,7 @@ const ItemDetailContainer = () => {
     return (
         <div className="item-detail-container">
             {item && (
-                <ItemDetail id={item.id} title={item.title} pictureUrl={item.pictureUrl} price={item.price} max={item.max} />
+                <ItemDetail id={item.id} title={item.title} pictureUrl={item.pictureUrl} price={item.price} max={item.stock} />
             )}
         </div>
     )

@@ -22,7 +22,7 @@ const ItemDetail = ({id, title, pictureUrl, price, max}) => {
                 <h2> {title} </h2>
                 <h3> {`$${price}`} </h3>
                 {!buying ? <a className="actionButton" onClick={()=>setBuying(true)}>Comprar</a> :<ItemCount initial={0} stock={max} onAdd={onAdd} />}
-                {quantity==max && buying && <Link to="/cart" className="actionButton"> Terminar Compra </Link>}
+                {quantity>0 && buying && <Link to="/cart" className="actionButton"> Terminar Compra </Link>}
             </div>
         </div>  
     )

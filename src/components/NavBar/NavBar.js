@@ -12,6 +12,7 @@ const NavBar = (props) => {
                         <Link to='/'><img src={img} alt='logo strange' width= '150px' /></Link>
                         <NavLink to='/categories/1' className='nav-bar-button' activeClassName='-active'>Categoria Ropa</NavLink>
                         <NavLink to='/categories/2' className='nav-bar-button' activeClassName='-active'>Categoria de accesorios</NavLink>
+                        <NavLink to='/orders' className='nav-bar-button' activeClassName='-active'>Ordenes</NavLink>
                         <CartNavBar/>
                 </div>
         </header>
