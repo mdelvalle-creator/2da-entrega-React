@@ -1,10 +1,16 @@
 # Entrega final React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## SrangeStore
 
 ![StrangeStore logo](./src/components/NavBar/strangeLogo.png "Logo")
 
 This is a mock frontend for Strange Store, a clothes and accesories web store. It currently supports browsing items, filtering them by categories, accessing item details and adding them to the cart. Once the user decides it wants to buy the items, there's a cart page with a summary of the items and the grand total to pay. The user is then prompted for his or her name, phone and email with validations for each field. After the data is entered, an order is created with a unique ID. This ID can be used on the Orders page to retrieve the order summary without revealing the buyer's data.
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+This project uses Firebase & Firestore for data persistance.
+
+Made with ♥ by Maria Pia del Valle
 
 ## Available Scripts
 
