@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { useParams } from 'react-router';
 import { CartItem } from '../CartPage/cartPage';
 import { getCurrentFirestore } from '../../firebase';
-import { doc, getDoc, Timestamp } from 'firebase/firestore/lite';
+import { doc, getDoc } from 'firebase/firestore/lite';
 import '../CartPage/cartPage.css';
 import './orderPage.css';
 
