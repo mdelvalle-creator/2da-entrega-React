@@ -1,6 +1,6 @@
 # Entrega final React
 
-## SrangeStore
+## StrangeStore
 
 ![StrangeStore logo](./src/components/NavBar/strangeLogo.png "Logo")
 
