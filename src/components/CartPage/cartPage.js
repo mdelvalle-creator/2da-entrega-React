@@ -36,7 +36,7 @@ const CartPage = () => {
             {cartContent.length == 0? <EmptyCart /> : (
             <div className="cart-container">
                 <div className="cart-list-header">
-                    <span className="normalizedWidth">Articulo</span>
+                    <span className="normalizedWidth">Artículo</span>
                     <span>Cantidad</span>
                     <span className="marginRight">Precio</span>
                 </div>

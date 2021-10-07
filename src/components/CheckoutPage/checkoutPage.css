@@ -1,39 +1,51 @@
  .checkout-container{
-    margin: 150px 32px 32px;
+    margin: 190px 32px 32px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.checkout-client-form{
-
-}
-
 .prompt{
+    color: #768a75;
+    font-size: 25px;
+    font-family: 'Montserrat';
+    font-weight: bold;
 
 }
 .client-data{
-
-}
-
-.client-data{
-
-}
-
-.data-label{
-
+    margin-top: 24px;
+    display: grid;
+    grid-template-columns: 0.4fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    row-gap: 15px;
 }
 
 .data-label{
-    
+    justify-self: start;
+    color: #768a75;
+    font-size: 18px;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    line-height: 14px;
+    align-self: center;
 }
 
 .order-action{
-
+    background-color: #768a75;
+    border-radius: 20px;
+    padding: 7px;
+    color: white;
+    font-size: 18px;
+    font-family: 'Montserrat';
+    margin-top: 24px;
+    text-decoration: none;
 }
 
 .error-messages{
-
+    color: red;
+    font-weight: bold;
+    font-size: 12px;
+    font-family: 'Montserrat';
 }
 
 .checkout-order-successful{
@@ -41,9 +53,14 @@
 }
 
 .order-message{
-
+    font-size: 45px;
+    color: #c5c5c5;
 }
 
 .order-sub-message{
-    
+    font-size: 25px;
+    color: #768a75;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    margin-bottom: 24px;
 }

@@ -4,3 +4,8 @@
     flex-direction: column;
     align-items: center;
 }
+
+.order-header{
+    font-size: 45px;
+    color: #c5c5c5;
+}

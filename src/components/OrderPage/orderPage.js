@@ -58,7 +58,7 @@ const OrderPage = () => {
                     <span>{`Orden: ${orderId}`}</span>
                 </div>
                 <div className="cart-list-header">
-                    <span className="normalizedWidth">Articulo</span>
+                    <span className="normalizedWidth">Artículo</span>
                     <span>Cantidad</span>
                     <span className="marginRight">Precio</span>
                 </div>

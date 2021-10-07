@@ -38,10 +38,10 @@ const CheckoutPage = () => {
             messages.push('El nombre ingresado debe poseer al menos 8 caracteres.')
         };
         if (phone.length <= 8) {
-            messages.push('El teléfono ingresado debe tener al menos 8 numeros.')
+            messages.push('El teléfono ingresado debe poseer al menos 8 números.')
         };
         if (email.length <= 8) {
-            messages.push('El email ingresado debe tener al menos 6 caracteres.')
+            messages.push('El email ingresado debe poseer al menos 6 caracteres.')
         }
         if (email !== remail) {
             messages.push('Los emails ingresados no coinciden.')
@@ -79,17 +79,17 @@ const CheckoutPage = () => {
             {!orderId ? (
                 <div className="checkout-client-form">
                     <span className="prompt">Ingresa tus datos para generar la orden de compra</span>
-                    <form name='client-data'>
+                    <form name="client-data" className="client-data">
                         <label className="data-label" for="name">Nombre</label>
-                        <input className="data-input" type="text" id="name" name="name" maxLength={100} value={name} onChange={handleInput} /><br />
+                        <input className="data-input" type="text" id="name" name="name" maxLength={100} value={name} onChange={handleInput} />
                         <label className="data-label" for="phone">Teléfono</label>
-                        <input className="data-input" type="number" id="phone" name="phone" maxLength={15} value={phone} onChange={handleInput} /><br />
+                        <input className="data-input" type="number" id="phone" name="phone" maxLength={15} value={phone} onChange={handleInput} />
                         <label className="data-label" for="mail">Email</label>
-                        <input className="data-input" type="email" id="mail" name="mail" maxLength={32} value={email} onChange={handleInput} /><br />
+                        <input className="data-input" type="email" id="mail" name="mail" maxLength={32} value={email} onChange={handleInput} />
                         <label className="data-label" for="remail">Reingrese Email</label>
-                        <input className="data-input" type="email" id="remail" name="remail" maxLength={32} value={remail} onChange={handleInput} /><br />
+                        <input className="data-input" type="email" id="remail" name="remail" maxLength={32} value={remail} onChange={handleInput} />
                     </form>
-                    <button className="order-action" type="button" onClick={createOrder}>Crear orden</button>
+                    <button className="order-action" type="button" onClick={createOrder}>Realizar compra</button>
                     <div className="error-messages">
                         {validationMessages.map(message => (<p>{message}</p>))}
                     </div>
@@ -97,7 +97,7 @@ const CheckoutPage = () => {
                 <div className="checkout-order-successful">
                     <div className="order-message">La orden se creó exitosamente</div>
                     <div className="order-sub-message">{`Orden ${orderId} creada!`}</div>
-                    <Link className="order-action" to={`/order/${orderId}`}>Ver mi orden</Link>
+                    <Link className="order-action" to={`/orders/${orderId}`}>Ver mi orden</Link>
                 </div>)}
         </div>
     )
