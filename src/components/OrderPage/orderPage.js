@@ -6,7 +6,6 @@ import { getCurrentFirestore } from '../../firebase';
 import { doc, getDoc, Timestamp } from 'firebase/firestore/lite';
 import '../CartPage/cartPage.css';
 import './orderPage.css';
-import moment from 'moment';
 
 const EmptyOrder = () => (
     <div className="empty-cart">
